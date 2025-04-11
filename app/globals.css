@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-image: url("/bg.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: 'National Park', sans-serif;
+}
