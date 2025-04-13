@@ -7,15 +7,14 @@ interface LearnButtonProps {
 }
 
 function goToLesson(instructionId: string) {
-    // window.location.href = `/instrunctions/${instructionId}`
-    console.log(`/instrunctions/${instructionId}`)
+    console.log(instructionId)
 
 }
 
 const LearnButton = (props: LearnButtonProps) => {
   return (
     <>
-        <button className='learn-button' onClick={() => goToLesson(props.instructionId)}>Learn</button>
+        <button className='learn-button' onClick={() => goToLesson(props.instructionId)}>Learn now</button>
     </>
   )
 }

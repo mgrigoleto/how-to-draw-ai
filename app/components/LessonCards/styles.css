@@ -1,13 +1,12 @@
 .learn-button{
     border: none;
-    background: rgb(0, 0, 75);
+    background: rgb(0, 0, 102);
     color: white;
-    width: 100px;
+    width: 100%;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bold;
     font-size: 18px;
-    align-self: flex-end;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -18,24 +17,24 @@
 
 .lesson-card{
     background-color: white;
-    height: 25vh;
-    width: 350px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 15px black;
-    padding: 10px;
+    width: 520px;
+    height: 230px;
+    border-radius: 7px;
+    box-shadow: 15px 15px 25px black;
     margin: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 .lesson-card-inset-container{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-width: 100%;
+    padding: 10px;
+    height: 100%;
 }
 
 .lesson-card-inset-container img{
@@ -46,7 +45,13 @@
 .lesson-card-inset-container h3{
     font-size: 20px;
     font-weight: bold;
-    margin: 0 0 0 15px;
+    margin: 0;
     padding: 0;
-    color: #333;
+    color: black;
+}
+
+.stars{
+    color: rgb(51, 0, 182);
+    font-weight: bold;
+    font-size: 16px;
 }
