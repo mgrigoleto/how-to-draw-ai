@@ -8,6 +8,9 @@
     font-weight: bold;
     font-size: 18px;
     transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -52,6 +55,12 @@
 
 .stars{
     color: rgb(51, 0, 182);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.empty-stars{
+    color: rgb(173, 177, 255);
     font-weight: bold;
     font-size: 16px;
 }

@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     margin: 25px 10vw;
+    max-width: 100%;
     box-shadow: 15px 15px 25px rgba(0, 0, 0, 1);
     background: rgba(0, 4, 55, 1);
 }

@@ -1,12 +1,17 @@
 import React from 'react'
 import './styles.css'
 
-const Header = () => {
+interface HeaderProps {
+  title?: string;
+  subtitle?: string;
+}
+
+const Header = (props: HeaderProps) => {
   return (
     <header className='header'>
         <div id='title-bg-cover'>
-            <h1>Learn How to Draw</h1>
-            <h3>Use the power of AI to improve your skills.</h3>
+            <h1>{props.title}</h1>
+            {props.subtitle && <h3>{props.subtitle}</h3>}
         </div>
         <div className="wave">
             <svg viewBox="0 0 1440 320" preserveAspectRatio="none">

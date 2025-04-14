@@ -47,7 +47,7 @@ const DrawingPage = () => {
   return (
     <>
       <div  className='page-container'>
-        <Header/>
+        <Header title='Learn How to Draw' subtitle='Use the power of AI to improve your skills.'/>
         <div className='cards-container'> 
           {learningOptions.map((object => (
             <LessonCard title={object.title} instructionId={object.instructionId} difficultyLevel={object.difficultyLevel} description={object.description} key={object.instructionId}/>

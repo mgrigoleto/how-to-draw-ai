@@ -5,22 +5,26 @@ interface RatingStarsProps {
     difficultyLevel: number;
 }
 
-function starsToDisplay(difficultyLevel: number) {
+function filledStars(difficultyLevel: number) {
     let stars = ''
     for (let i = 0; i < difficultyLevel; i++) {
-        stars += '★'
-    }
-    for (let i = difficultyLevel; i < 5; i++) {
-        stars += '☆'
+        stars += '⬤ '
     }
     return stars
+}
 
+function emptyStars(difficultyLevel: number) {
+    let stars = ''
+    for (let i = difficultyLevel; i < 5; i++) {
+        stars += '⬤ '
+    }
+    return stars
 }
 
 const RatingStars = (props: RatingStarsProps) => {
   return (
     <div>
-        <b className='stars'>Difficulty level: </b><span className='stars'>{starsToDisplay(props.difficultyLevel)}</span>
+        <b className='stars'>Difficulty level: </b><span className='stars'>{filledStars(props.difficultyLevel)}</span><span className='empty-stars stars'>{emptyStars(props.difficultyLevel)}</span>
     </div>
   )
 }
