@@ -1,6 +1,6 @@
 import React from 'react'
 import LessonCard from './components/LessonCards/LessonCard'
-import './styles.css'
+import styles from './MainPage.module.css'
 import Header from './components/HeadersAndFooters/Header';
 import Footer from './components/HeadersAndFooters/Footer';
 
@@ -46,9 +46,9 @@ const learningOptions = [
 const DrawingPage = () => {
   return (
     <>
-      <div  className='page-container'>
+      <div className={styles.pageContainer}>
         <Header title='Learn How to Draw' subtitle='Use the power of AI to improve your skills.'/>
-        <div className='cards-container'> 
+        <div className={styles.cardsContainer}> 
           {learningOptions.map((object => (
             <LessonCard title={object.title} instructionId={object.instructionId} difficultyLevel={object.difficultyLevel} description={object.description} key={object.instructionId}/>
           )))}

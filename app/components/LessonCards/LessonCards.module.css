@@ -1,4 +1,4 @@
-.learn-button{
+.learnButton{
     border: none;
     background: rgb(0, 0, 102);
     color: white;
@@ -14,11 +14,11 @@
     cursor: pointer;
 }
 
-.learn-button:hover{
+.learnButton:hover{
     background: rgb(0, 0, 31);
 }
 
-.lesson-card{
+.lessonCard{
     background-color: white;
     width: 520px;
     height: 230px;
@@ -31,7 +31,7 @@
     align-items: center;
 }
 
-.lesson-card-inset-container{
+.lessonCardInsetContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,12 +40,12 @@
     height: 100%;
 }
 
-.lesson-card-inset-container img{
+.lessonCardInsetContainer img{
     max-width: 100%;
     max-height: 100%;
 }
 
-.lesson-card-inset-container h3{
+.lessonCardInsetContainer h3{
     font-size: 20px;
     font-weight: bold;
     margin: 0;
@@ -59,7 +59,7 @@
     font-size: 16px;
 }
 
-.empty-stars{
+.emptyStars{
     color: rgb(173, 177, 255);
     font-weight: bold;
     font-size: 16px;

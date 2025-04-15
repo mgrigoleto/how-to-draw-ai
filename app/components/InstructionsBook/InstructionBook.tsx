@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import './styles.css'
+import styles from './InstructionsBook.module.css'
 import RatingStars from '../LessonCards/RatingStars'
 import { FaArrowCircleRight  } from "react-icons/fa";
 import { useState } from 'react'
@@ -53,13 +53,13 @@ const InstructionBook = () => {
 
   return (
     <>
-      <div className='book-cape' style={{display: showCape ? 'flex' : 'none'}}>
-        <div className='book-cape-content'>
-          <h1 className='book-title'>{topic.title}</h1>
+      <div className={styles.bookCape} style={{display: showCape ? 'flex' : 'none'}}>
+        <div className={styles.bookCapeContent}>
+          <h1 className={styles.bookTittle}>{topic.title}</h1>
           <RatingStars difficultyLevel={topic.difficultyLevel}/>
-          <p className='book-description'>{topic.description}</p>
+          <p className={styles.bookDescription}>{topic.description}</p>
         </div>
-        <button className='start-lesson-button' onClick={() => handleCapeClick()}>START LEARNING NOW <FaArrowCircleRight style={{margin:'0 0 0 6px'}}/>
+        <button className={styles.startLessonButton} onClick={() => handleCapeClick()}>START LEARNING NOW <FaArrowCircleRight style={{margin:'0 0 0 6px'}}/>
         </button>
       </div>
       <BookPage displayPage={showPage} instructions={instructions}/>

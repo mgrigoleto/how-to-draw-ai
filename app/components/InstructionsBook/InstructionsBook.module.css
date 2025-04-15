@@ -30,7 +30,7 @@
     background: rgba(255, 0, 0, 0.4);
 }
 
-.book-cape{
+.bookCape{
     background-image: url("/instruction-bg.png");
     background-repeat: repeat;
     background-attachment: scroll;
@@ -48,7 +48,7 @@
     border: 1px solid black;
 }
 
-.book-cape-content{
+.bookCapeContent{
     background-color: white;
     border-radius: 10px;
     padding: 25px;
@@ -60,13 +60,13 @@
     border: 2px solid black;
 }
 
-.book-cape-content h1{
+.bookCapeContent h1{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
 }
 
-.start-lesson-button{
+.startLessonButton{
     border: none;
     background: rgb(0, 0, 102);
     color: white;
@@ -84,11 +84,11 @@
     cursor: pointer;
 }
 
-.start-lesson-button:hover{
+.startLessonButton:hover{
     background: rgb(0, 0, 31);
 }
 
-.page-buttons-line{
+.pageButtonsLine{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +96,7 @@
     margin: 0 0 20px 0;
 }
 
-.page-button{
+.pageButton{
     z-index: 2;
     background: rgb(255, 255, 255);
     color: black;
@@ -116,11 +116,11 @@
     border: 1px solid black;
 }
 
-.page-button:hover{
+.pageButton:hover{
     background: rgb(224, 224, 224);
 }
 
-.page-content{
+.pageContent{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -129,7 +129,7 @@
     height: 100%;
 }
 
-.page-content h1{
+.pageContent h1{
     font-size: 20px;
     font-weight: bold;
     text-align: left;

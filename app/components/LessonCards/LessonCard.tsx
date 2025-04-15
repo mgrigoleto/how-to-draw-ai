@@ -1,6 +1,6 @@
 import React from 'react'
 import LearnButton from './LearnButton'
-import './styles.css'
+import styles from './LessonCards.module.css'
 import RatingStars from './RatingStars';
 
 interface LessonCardProps {
@@ -12,11 +12,11 @@ interface LessonCardProps {
 
 const LessonCard = (props: LessonCardProps) => {
   return (
-    <div className='lesson-card'>
-        <div className='lesson-card-inset-container' style={{width: "40%"}}>
+    <div className={styles.lessonCard}>
+        <div className={styles.lessonCardInsetContainer} style={{width: "40%"}}>
             <img src={`/template.png`} alt={props.title} />
         </div>
-        <div className='lesson-card-inset-container' style={{width: "60%"}}>
+        <div className={styles.lessonCardInsetContainer} style={{width: "60%"}}>
             <div style={{display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100%"}}>
                 <h3>{props.title}</h3>
                 <RatingStars difficultyLevel={props.difficultyLevel}/>

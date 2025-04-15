@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.css'
+import styles from './InstructionsBook.module.css'
 import { useState } from 'react'
 import { FaArrowRight, FaArrowLeft  } from "react-icons/fa";
 
@@ -21,15 +21,15 @@ const BookPage = (props: BookPageProps) => {
   return (
     props.displayPage &&
     <>
-        <div className='page' style={{display: props.displayPage ? 'flex' : 'none'}}>
-            <div className='page-content'>
+        <div className={styles.page} style={{display: props.displayPage ? 'flex' : 'none'}}>
+            <div className={styles.pageContent}>
                 <h1>{props.instructions[currentPage].title}</h1>
                 <p>{props.instructions[currentPage].description}</p>
             </div>
-            <div className='page-buttons-line'>
+            <div className={styles.pageButtonsLine}>
                 {currentPage === 0 && <span></span>}
-                <button className='page-button' style={{display: currentPage === 0 ? 'none' : 'flex'}} onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 0}><FaArrowLeft /></button>
-                <button className='page-button' style={{display: currentPage === props.instructions.length - 1 ? 'none' : 'flex'}} onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === props.instructions.length - 1}><FaArrowRight /></button>
+                <button className={styles.pageButton} style={{display: currentPage === 0 ? 'none' : 'flex'}} onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 0}><FaArrowLeft /></button>
+                <button className={styles.pageButton} style={{display: currentPage === props.instructions.length - 1 ? 'none' : 'flex'}} onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === props.instructions.length - 1}><FaArrowRight /></button>
             </div>
         </div>
     </>

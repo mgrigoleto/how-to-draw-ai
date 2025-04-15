@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.css'
+import styles from './LessonCards.module.css'
 
 interface RatingStarsProps {
     difficultyLevel: number;
@@ -24,7 +24,7 @@ function emptyStars(difficultyLevel: number) {
 const RatingStars = (props: RatingStarsProps) => {
   return (
     <div>
-        <b className='stars'>Difficulty level: </b><span className='stars'>{filledStars(props.difficultyLevel)}</span><span className='empty-stars stars'>{emptyStars(props.difficultyLevel)}</span>
+        <b className={styles.stars}>Difficulty level: </b><span className={styles.stars}>{filledStars(props.difficultyLevel)}</span><span className={styles.emptyStars}>{emptyStars(props.difficultyLevel)}</span>
     </div>
   )
 }

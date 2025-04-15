@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import './styles.css'
+import styles from './LessonCards.module.css'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link';
 
@@ -12,7 +12,7 @@ const LearnButton = (props: LearnButtonProps) => {
 
   return (
     <>
-        <Link className='learn-button' href={`/instructions?topic=${props.instructionId}`}>
+        <Link className={styles.learnButton} href={`/instructions?topic=${props.instructionId}`}>
             Learn now
         </Link>
     </>
