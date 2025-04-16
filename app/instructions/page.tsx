@@ -16,7 +16,7 @@ const InstructionsPage = () => {
     <>
       <div className={styles.pageContainer}>
         <Header title={topic} />
-        <InstructionBook />
+          <InstructionBook />
         <Footer/>
       </div>
     </>
